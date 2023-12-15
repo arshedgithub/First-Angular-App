@@ -1,3 +1,10 @@
 <input type="text" [(ngModel)]="someValue">
 <button (click)="clickFunction()">click</button>
-<b>{{someValue}}</b>
+<!-- <b>{{someValue}}</b> -->
+
+<table>
+  <tr><th>values</th></tr>
+  <tr *ngFor="let temp of someValues">
+    <td>{{temp}}</td>
+  </tr>
+</table>
